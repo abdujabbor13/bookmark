@@ -1,5 +1,5 @@
   const elsTabsItem = document.querySelectorAll('.tabs__item');
-  const elsTabsPanel = document.querySelectorAll('.tabs__panel');
+  const elsTabsPanel = document.querySelectorAll('.tabpanels__item');
   const elsTabLink = document.querySelectorAll('.js-tab-link');
 
   function deactivateTabitems () {
@@ -10,7 +10,7 @@
 
   function deactivateTebPanels () {
     elsTabsPanel.forEach(function (elTabsPanel) {
-      elTabsPanel.classList.remove('tabs__panel--active');
+      elTabsPanel.classList.remove('tabpanels__item--active');
     });
   }
 
@@ -33,6 +33,6 @@
       //shov active tab panel
       // const elTargetPanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`);
       const elTargetPanel = document.querySelector(elTabLink.dataset.tabTarget);
-      elTargetPanel.classList.add('tabs__panel--active');
+      elTargetPanel.classList.add('tabpanels__item--active');
     });
   });
