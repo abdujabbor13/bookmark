@@ -314,17 +314,17 @@ select:-webkit-autofill:focus {
   letter-spacing: 0.5px;
 }
 
+.tabs__item--active .tabs__link {
+  border-color: var(--red);
+  color: var(--text-color);
+}
+
 .tabs__link:hover {
   color: var(--red);
 }
 
 .tabs__link:active {
   opacity: 0.6;
-}
-
-.tabs__item--active .tabs__link {
-  border-color: var(--red);
-  color: var(--text-color);
 }
 
 
